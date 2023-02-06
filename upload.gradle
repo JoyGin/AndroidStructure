@@ -1,0 +1,58 @@
+// 官方文档：https://developer.android.com/studio/build/maven-publish-plugin?hl=zh-cn
+
+afterEvaluate {
+    project.apply plugin: 'maven-publish'
+    publishing {
+        publications {
+            if (project.name.contains("Api")) {
+                release(MavenPublication) {
+
+                    println "============ release(MavenPublication) ${project.name} ============"
+
+                    groupId = 'com.zex'
+                    artifactId = project.name
+                    version = '1.0-release'
+
+                    afterEvaluate {
+                        from components.release
+                    }
+
+                }
+            } else {
+                product(MavenPublication) {
+
+                    println "============ debug(MavenPublication) ${project.name}============"
+
+                    groupId = 'com.zex'
+                    artifactId = project.name
+                    version = 'product-1.0'
+
+                    afterEvaluate {
+                        from components.productRelease
+                    }
+
+                }
+
+                sdk(MavenPublication) {
+
+                    println "============ release(MavenPublication) ${project.name} ============"
+
+                    groupId = 'com.zex'
+                    artifactId = project.name
+                    version = 'sdk-1.0'
+
+                    afterEvaluate {
+                        from components.sdkRelease
+                    }
+
+                }
+            }
+
+        }
+        repositories {
+            maven {
+                url "${rootProject.projectDir}/.repo"
+            }
+        }
+    }
+}

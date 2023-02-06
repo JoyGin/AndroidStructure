@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.zex",
+    "module": "library2Impl",
+    "version": "sdk-1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "sdkReleaseVariantSdkReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "library2Impl-sdk-1.0.aar",
+          "url": "library2Impl-sdk-1.0.aar",
+          "size": 1656,
+          "sha512": "4a7ad1d92c11f64bf02adee414cb2de064560220fefde6e6b5735d05f50e427c39e7e0ddc6f2ef3995ba5416ac1260349a58886a031ad2b3fe703ffbce389468",
+          "sha256": "29c1c1e1445a60e755b2a86f6176741c5e41252e3a69afc12c4ba03ab4ffb11d",
+          "sha1": "ef4dcfd946ec062760c044ae99b8734132569175",
+          "md5": "d483c519cc3f18709e0be008738c6c31"
+        }
+      ]
+    },
+    {
+      "name": "sdkReleaseVariantSdkReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.zex",
+          "module": "library2Api",
+          "version": {
+            "requires": "1.0-release"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library2Impl-sdk-1.0.aar",
+          "url": "library2Impl-sdk-1.0.aar",
+          "size": 1656,
+          "sha512": "4a7ad1d92c11f64bf02adee414cb2de064560220fefde6e6b5735d05f50e427c39e7e0ddc6f2ef3995ba5416ac1260349a58886a031ad2b3fe703ffbce389468",
+          "sha256": "29c1c1e1445a60e755b2a86f6176741c5e41252e3a69afc12c4ba03ab4ffb11d",
+          "sha1": "ef4dcfd946ec062760c044ae99b8734132569175",
+          "md5": "d483c519cc3f18709e0be008738c6c31"
+        }
+      ]
+    }
+  ]
+}

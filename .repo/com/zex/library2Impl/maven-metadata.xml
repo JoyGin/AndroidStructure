@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <groupId>com.zex</groupId>
+    <artifactId>library2Impl</artifactId>
+    <versioning>
+        <latest>sdk-1.0</latest>
+        <release>sdk-1.0</release>
+        <versions>
+            <version>1.0-debug</version>
+            <version>1.0-release</version>
+            <version>sdk-1.0</version>
+        </versions>
+        <lastUpdated>20221225101627</lastUpdated>
+    </versioning>
+</metadata>

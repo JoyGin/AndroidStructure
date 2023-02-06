@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url "${rootProject.projectDir}/.repo"
+        }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "AndroidStructure"
+include ':app'
+include ':library1'
+include ':library1:library1Api'
+include ':library1:library1Impl'
+include ':library2'
+include ':library2:library2Impl'
+include ':library2:library2Api'
+include ':apps'
+include ':apps:app-library1'
+include ':annotation'
+include ':compiler'
+include ':factoryprocessor'

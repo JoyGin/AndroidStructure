@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.zex",
+    "module": "library1Impl",
+    "version": "1.0-debug",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.zex",
+          "module": "library1Api",
+          "version": {
+            "requires": "1.0-release"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library1Impl-1.0-debug.aar",
+          "url": "library1Impl-1.0-debug.aar",
+          "size": 1738,
+          "sha512": "420f24c21f27572e205bea2717e5447826e6021eeedbaae816ac6bfdedc9387a46c10d4c4ef85212db81b859d22c15beb34a874c35f5c33a139ee01a7abe5103",
+          "sha256": "9d0087e121f0c062f73a0130ef74742dcea7e9d6ff3955a6fc77c20d4bae4b68",
+          "sha1": "adfd0224c8c1ad5a4d91a250d9183df8523b81ed",
+          "md5": "09d6ebf0f262e051e225a28df492f806"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "com.zex",
+          "module": "library1Api",
+          "version": {
+            "requires": "1.0-release"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library1Impl-1.0-debug.aar",
+          "url": "library1Impl-1.0-debug.aar",
+          "size": 1738,
+          "sha512": "420f24c21f27572e205bea2717e5447826e6021eeedbaae816ac6bfdedc9387a46c10d4c4ef85212db81b859d22c15beb34a874c35f5c33a139ee01a7abe5103",
+          "sha256": "9d0087e121f0c062f73a0130ef74742dcea7e9d6ff3955a6fc77c20d4bae4b68",
+          "sha1": "adfd0224c8c1ad5a4d91a250d9183df8523b81ed",
+          "md5": "09d6ebf0f262e051e225a28df492f806"
+        }
+      ]
+    }
+  ]
+}

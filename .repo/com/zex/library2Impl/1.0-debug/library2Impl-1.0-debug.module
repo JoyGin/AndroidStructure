@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.zex",
+    "module": "library2Impl",
+    "version": "1.0-debug",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDebugApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "library2Impl-1.0-debug.aar",
+          "url": "library2Impl-1.0-debug.aar",
+          "size": 1738,
+          "sha512": "225880bbe59ccbf3d69f9eee00d2aac17bb8ccc7d9a6a43de22dcd605b914b527e8b30f75054cc1c495638b19b980670b49021bb5e98ceebaf41b89f5f84df26",
+          "sha256": "22923f72c9eafd1d1dc41ba06e9e22fe1861968c1c643d3bda2316e23ad08c11",
+          "sha1": "52c281ee2986e69eb49d48ca1e01c46a8d10475d",
+          "md5": "7d3b8a5be8355bd527946478b124943a"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDebugRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.zex",
+          "module": "library2Api",
+          "version": {
+            "requires": "1.0-debug"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "library2Impl-1.0-debug.aar",
+          "url": "library2Impl-1.0-debug.aar",
+          "size": 1738,
+          "sha512": "225880bbe59ccbf3d69f9eee00d2aac17bb8ccc7d9a6a43de22dcd605b914b527e8b30f75054cc1c495638b19b980670b49021bb5e98ceebaf41b89f5f84df26",
+          "sha256": "22923f72c9eafd1d1dc41ba06e9e22fe1861968c1c643d3bda2316e23ad08c11",
+          "sha1": "52c281ee2986e69eb49d48ca1e01c46a8d10475d",
+          "md5": "7d3b8a5be8355bd527946478b124943a"
+        }
+      ]
+    }
+  ]
+}
