@@ -8,6 +8,7 @@
       <module name="AndroidStructure.library1.library1Impl" target="11" />
       <module name="AndroidStructure.library2.library2Api" target="11" />
       <module name="AndroidStructure.library2.library2Impl" target="11" />
+      <module name="AndroidStructure.network" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
