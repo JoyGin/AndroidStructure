@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/library2/library2Api" />
             <option value="$PROJECT_DIR$/library2/library2Impl" />
             <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/uilibrary" />
           </set>
         </option>
       </GradleProjectSettings>
